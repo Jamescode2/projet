@@ -1,0 +1,75 @@
+/* body */
+body{
+    margin: auto;
+    padding: auto;
+  
+  }
+  
+  /* nav */
+  nav{
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-template-rows: 1fr;
+    background-color: aqua;
+    min-width:100%;
+    padding: 10px;
+  }
+  .logo{
+    grid-row: 1;
+    grid-column: 1/2;
+  }
+  .menu_li{
+    display: flex;
+    justify-content: space-around;
+    grid-row: 1;
+    grid-column: 2;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  /* lien */
+  .lien{
+    padding: 12px 10px 10px 10px;
+    background-color: red;
+    box-shadow: 3px 3px 0px 0px;
+  }
+  .lien:hover{
+    background-color: yellow;
+    cursor: pointer;
+  }
+  a:link{
+    text-decoration: none;
+  }
+
+  
+  /* main */
+main{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 50px;
+  justify-items: center;
+  margin-bottom: 40px;
+  padding: 30px 0;
+  border-top: 3px black solid;
+  border-bottom: 3px black solid;
+  
+}
+.carte{
+  width: 200px;
+  border: 4px black solid;
+  border-radius: 1em;
+  text-align: center;
+}
+
+.carte img{
+  width:150px;
+  margin: 20px 20px;
+  border: 4px black solid;
+  border-radius: 1em;
+}
+
+/* footer */
+footer{
+  border-top: 4px black solid;
+}

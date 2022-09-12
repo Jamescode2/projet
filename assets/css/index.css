@@ -1,0 +1,157 @@
+/* body */
+body {
+  margin: auto;
+  padding: auto;
+
+}
+
+/* nav */
+.menu {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  grid-template-rows: 1fr;
+  background-color: aqua;
+  min-width: 100%;
+  padding: 10px;
+}
+
+.menu .logo {
+  grid-row: 1;
+  grid-column: 1/2;
+}
+
+.menu .menu_li {
+  display: flex;
+  justify-content: space-around;
+  grid-row: 1;
+  grid-column: 2;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* burger */
+.burger {
+  display: none;
+  background-color: aqua;
+}
+
+.burger .burger-icon span {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+}
+
+.menu_two {
+  display: none;
+  min-height: 100vh;
+  z-index: 3;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: aqua;
+  padding: 12px;
+}
+
+.menu_two .close {
+  position: relative;
+  font-size: 30px;
+}
+
+/* lien */
+.lien {
+  padding: 10px;
+  background-color: red;
+  box-shadow: 3px 3px 0px 0px;
+}
+
+.lien:hover {
+  background-color: yellow;
+  cursor: pointer;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+/* header */
+header {
+  margin-bottom: 30px;
+}
+
+header img {
+  border: 4px black solid;
+  border-radius: 1em;
+}
+
+/* main */
+main {
+  display: flex;
+  justify-content: space-evenly;
+  min-height: 300px;
+  margin-bottom: 40px;
+  border-top: 3px black solid;
+  border-bottom: 3px black solid;
+  padding: 30px 0;
+}
+
+main .carte {
+  width: 200px;
+  border: 4px black solid;
+  border-radius: 1em;
+}
+
+main .carte img {
+  width: 150px;
+  margin: 20px 20px;
+  border: 4px black solid;
+  border-radius: 1em;
+}
+
+/* footer */
+footer {
+  border-top: 4px black solid;
+}
+
+/* responsive */
+@media screen and (max-width: 700px) {
+  .menu {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .burger-icon span {
+    display: block;
+    cursor: pointer;
+  }
+
+  .menu_two .menu_li {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .lien {
+    margin-bottom: 5px;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 40px;
+    border-top: 3px black solid;
+    border-bottom: 3px black solid;
+    padding: 30px 0;
+  }
+
+
+}

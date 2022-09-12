@@ -1,0 +1,67 @@
+/* body */
+body{
+    margin: auto;
+    padding: auto;
+  
+  }
+  
+  /* nav */
+  nav{
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-template-rows: 1fr;
+    background-color: aqua;
+    min-width:100%;
+    padding: 10px;
+  }
+  .logo{
+    grid-row: 1;
+    grid-column: 1/2;
+  }
+  .menu_li{
+    display: flex;
+    justify-content: space-around;
+    grid-row: 1;
+    grid-column: 2;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  /* lien */
+  .lien{
+    padding: 12px 10px 10px 10px;
+    background-color: red;
+    box-shadow: 3px 3px 0px 0px;
+  }
+  .lien:hover{
+    background-color: yellow;
+    cursor: pointer;
+  }
+  a:link{
+    text-decoration: none;
+  }
+
+  
+/* form */
+main{
+  min-height: 600px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main form{
+  width: 60%;
+}
+main form fieldset{
+  display: flex;
+  flex-direction: column;
+}
+input{
+  margin-bottom: 10px;
+}
+
+/* footer */
+footer{
+  border-top: 4px black solid;
+}
