@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet trivial</title>
+    <script src="../js/index.js" defer></script>
+    <link rel="stylesheet" href="../css/Accueil.css">
+    <link rel="shortcut icon" href="../img/laptop.png" type="image/x-icon">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"
+        defer></script>
+    
+</head>
+
+<body>
+
+    <nav class="menu">
+        <div class="logo">
+            <a href="Accueil.html"><img src="../img/laptop.png" alt="" style="height: 40px; width: 40px;"></a>
+        </div>
+        <ul class="menu_li">
+            <li class="lien"><a href="Accueil.html">Accueil</a></li>
+            <li class="lien"><a href="Boutique.html">Boutique</a></li>
+            <li class="lien"><a href="Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <a href="#" class="burger">
+        <span class="burger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </span>
+    </a>
+
+    <nav class="menu_two">
+        <a href="#" class="close">x</a>
+        <ul class="menu_li">
+            <li class="lien"> <a href="Accueil.html">Accueil</a></li>
+            <li class="lien"> <a href="Boutique.html">Boutique</a></li>
+            <li class="lien"> <a href="Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <header>
+        <!-- caroussel bootsrap -->
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <!-- Indicators/dots -->
+            <!-- <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="2"></button>
+            </div> -->
+
+            <!-- slider boostrap -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../img/img1.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block" style="color: red;">
+                        <h2>header</h2>
+                        <p>Première slide</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="../img/img2.jpg" class="d-block w-100" alt="..." >
+                    <div class="carousel-caption d-none d-md-block" style="color: red;">
+                        <h2>header</h2>
+                        <p>deuxième slide</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="../img/img3.jpg" class="d-block w-100" alt="..." >
+                    <div class="carousel-caption d-none d-md-block" style="color: red;">
+                        <h2>header</h2>
+                        <p>troisième slide</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Left and right controls/icons -->
+            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleSlidesOnly"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleSlidesOnly"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button> -->
+        </div>
+    </header>
+
+    <main>
+        <div class="carte">
+            <img src="../img/ordi1.jpg" alt="Avatar">
+            <div class="contain">
+                <h4>Ordinateur 1</h4>
+                <p>Prix : 1000 €</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                     Similique praesentium ab sapiente ad
+                    aperiam aliquam facere illum expedita impedit alias, 
+                    temporibus voluptate consequuntur.</p>
+            </div>
+        </div>
+        <div class="carte">
+            <img src="../img/ordi2.jpg" alt="Avatar">
+            <div class="contain">
+                <h4>Ordinateur 2</h4>
+                <p>Prix : 900 €</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                    Alias culpa, a, consequatur laborum
+                    laboriosam ut nesciunt optio aliquam corrupti, 
+                    voluptates perspiciatis debitis iste.</p>
+            </div>
+        </div>
+        <div class="carte">
+            <img src="../img/ordi3.jpg" alt="Avatar">
+            <div class="contain">
+                <h4>Ordinateur 3</h4>
+                <p>Prix: 800 €</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Mollitia quidem vel modi obcaecati voluptate
+                    aperiam sit, deserunt sequi maxime, 
+                    vero cum ab repudiandae ut sapiente.</p>
+            </div>
+        </div>
+
+    </main>
+
+    <footer style="text-align: center; text-transform: uppercase;">@copyright 2022</footer>
+
+
+</body>
+
+</html>
