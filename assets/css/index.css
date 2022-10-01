@@ -1,0 +1,79 @@
+/* body */
+body {
+    margin: auto;
+    padding: auto;
+  }
+  
+  /* nav */
+  .menu {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-template-rows: 1fr;
+    background-color: aqua;
+    min-width: 100%;
+    padding: 10px;
+  }
+  
+  .menu .logo {
+    grid-row: 1;
+    grid-column: 1/2;
+  }
+  
+  .menu .menu_li {
+    display: flex;
+    justify-content: space-around;
+    grid-row: 1;
+    grid-column: 2;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  /* burger */
+  .burger {
+    display: none;
+    background-color: aqua;
+  }
+  
+  .burger .burger-icon span {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+  }
+  
+  .menu_two {
+    display: none;
+    min-height: 100vh;
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: aqua;
+    padding: 12px;
+  }
+  
+  .menu_two .close {
+    position: relative;
+    font-size: 30px;
+  }
+  
+  /* lien */
+  .lien {
+    padding: 10px;
+    background-color: red;
+    box-shadow: 3px 3px 0px 0px;
+  }
+  
+  .lien:hover {
+    background-color: blue;
+    cursor: pointer;
+  }
+  
+  a:link {
+    text-decoration: none;
+  }
+  .lien a:hover{
+    color: yellow;
+  }
+  
